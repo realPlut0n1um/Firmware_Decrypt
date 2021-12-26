@@ -10,7 +10,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
 </pre>
 
-## Here is the firmware Post-Decryption
+### Here is the firmware Post-Decryption
 <pre>
 $ binwalk final.rom<br />
 
