@@ -6,11 +6,11 @@
 
 
 std::string decryptKey(){
-  int8_t indx = 15;
+  	int8_t indx = 15;
 	std::stringstream keyStream;
 
-  // Array to store out encrypted AES key
-	uint16_t encrypted_Key[] = {0x95, 0xB3, 0x15, 0x32, 
+  	// Array to store out encrypted AES key
+  	uint16_t encrypted_Key[] = {0x95, 0xB3, 0x15, 0x32, 
 				    0xE4, 0xE4, 0x43, 0x6B, 
 				    0x90, 0xBE, 0x1B, 0x31, 
 				    0xA7, 0x8B, 0x2D, 0x5};	
@@ -24,12 +24,12 @@ std::string decryptKey(){
 		indx -= 4;
 	}
 	
-  // parse the decrypted key as hex into the keystream
+  	// parse the decrypted key as hex into the keystream
 	for(int8_t v = 0; v < 15; v++){
 		keyStream << std::hex << encrypted_Key[v];
 	}
 
-  // store the parsed decrypted key as a string for return 
+  	// store the parsed decrypted key as a string for return 
 	std::string decryptedKey(keyStream.str());
 	
 	return decryptedKey;
