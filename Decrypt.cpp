@@ -35,7 +35,7 @@ std::string decryptKey(){
 	return decryptedKey;
 }
 
-int main(int argc, char* argv[]){
+int main(int argc, const char* argv[]){
 	
 	if(argc != 2){
 		std::cout << "Supply only the firmware" << std::endl;
