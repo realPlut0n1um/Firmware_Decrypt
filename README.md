@@ -1,6 +1,7 @@
 # Firmware_Decrypt
 This utility is used to decrypt firmware.
 Currently only tested for IAW5000 Series PLC V2.2
+I plan on expanding on it as i reverse more firmware
 
 ### Here is the firmware Pre-Decryption
 <pre>
